@@ -5,7 +5,8 @@ class InfoExpenses(
     val category: String,
     val date: String,
 ) {
-    fun show() {
-        println("Сумма расхода - $sum₽\nКатегория - $category\nДата - $date")
+    fun show(expenses: InfoExpenses) {
+        println("Сумма расхода - ${expenses.sum}₽\nКатегория - ${expenses.category}\nДата - ${expenses.date}")
     }
+
 }
