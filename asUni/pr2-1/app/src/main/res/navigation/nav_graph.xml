@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentNavOne">
+
+    <fragment
+        android:id="@+id/fragmentNavOne"
+        android:label="One"
+        android:name="com.fitsport.test.NavOneFragment"/>
+    <fragment
+        android:id="@+id/fragmentNavTwo"
+        android:label="Two"
+        android:name="com.fitsport.test.NavTwoFragment"/>
+    <fragment
+        android:id="@+id/fragmentNavTree"
+        android:label="Tree"
+        android:name="com.fitsport.test.NavTreeFragment"/>
+</navigation>
