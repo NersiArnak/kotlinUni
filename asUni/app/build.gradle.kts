@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.fitsport.test"
+    namespace = "com.fitsport.pr2_2"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.fitsport.test"
+        applicationId = "com.fitsport.pr2_2"
         minSdk = 33
         targetSdk = 34
         versionCode = 1
@@ -33,19 +33,18 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    buildFeatures {
-        viewBinding = true
-    }
 }
 
 dependencies {
+    implementation("androidx.navigation:navigation-fragment-ktx: 2.7.0")
+    implementation("androidx.navigation:navigation-ui-ktx: 2.7.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation("androidx.navigation:navigation-fragment-ktx:2.6.0")
+    implementation("androidx.navigation:navigation-ui-ktx:2.6.0")
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.androidx.navigation.fragment.ktx)
-    implementation(libs.androidx.navigation.ui.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
